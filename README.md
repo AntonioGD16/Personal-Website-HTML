@@ -1,4 +1,2 @@
 # Personal-Website-HTML
-This is my first attempt of making a personal website using only HTML.
-On this website you will find out my hobbies, education and personal projects.
-The site contains 3 pages: home, contact and CV. On the home page you will find a photo of me and things like my age and my hobbies. On the CV page you will find my education, my personal projects and also my social links. Finally, on the contact page, you can email me via the form, or you can find my phone number, email, and address right below the form.
+This is my first attempt at creating a personal website using only HTML. On this website, you can learn about my hobbies, education, and personal projects. The site has three pages: Home, Contact, and CV. On the Home page, you’ll find a photo of me along with details like my age and hobbies. On the CV page, you can see my education, personal projects, and social links. Finally, on the Contact page, you can email me via the form, or find my phone number, email, and address listed right below it
