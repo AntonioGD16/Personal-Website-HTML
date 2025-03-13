@@ -1,0 +1,476 @@
+/* Stiluri generale pentru pagina */
+body {
+    font-family: Arial, sans-serif; /* Seteaza fontul paginii */
+    margin: 0; /* Elimina marginile implicite ale body-ului */
+    padding: 0; /* Elimina paddingul implicit al body-ului */
+    background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
+    color: #222222; /* Text aproape negru */
+    line-height: 1.6; /* Ajusteaza distanta dintre randuri pentru lizibilitate */
+}
+
+
+
+/* Stilizare pentru titluri */
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center; /* Centreaza titlurile pe pagina */
+    color: black; /* Culoarea textului este negru */
+}
+
+/* Stilizare pentru paragrafe */
+p {
+    font-size: 1rem; /* Stabileste dimensiunea textului */
+    line-height: 1.6; /* Ajusteaza spatierea intre randuri */
+    margin: 1rem 0; /* Adauga spatiu deasupra si dedesubt */
+    color: black; /* Textul are o nuanta de gri pentru contrast scazut */
+    text-align: justify; /* Aliniaza textul pe ambele margini */
+}
+
+/* Stil pentru text bold */
+b {
+    font-weight: bold; /* Textul este ingrosat */
+    color: #0056b3; /* Culoarea textului bold este albastru */
+}
+
+/* Stil special pentru text bold in paragrafe */
+p b {
+    font-size: 1.1rem; /* Textul bold are o dimensiune usor mai mare */
+}
+
+/* Butoane din navigare */
+nav button {
+    background-color: #0E5CAD;
+    color: white; /* Text alb pentru contrast */
+    border-radius: 5px;
+    padding: 10px 20px; /* Adauga spatiu in jurul textului */
+    margin: 10px; /* Adauga spatiu intre butoane */
+    cursor: pointer; /* Schimba cursorul la pointer */
+    transition: all 0.3s ease; /* Animatie pentru schimbari de stil */
+}
+
+/* Stil pentru butoane la hover */
+nav button:hover {
+    background-color:#3df07f; /* Culoare mai inchisa la hover */
+    transform: scale(1.1); /* Mareste butonul usor */
+}
+
+/* Stil pentru antet */
+header {
+    color: white; /* Text alb */
+    padding: 2rem 0; /* Spatiu interior pe verticala */
+    margin-bottom: 2rem; /* Spatiu sub antet */
+    text-align: center; /* Centreaza continutul */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Adauga o umbra discreta */
+}
+
+/* Sectiunea principala */
+main {
+    max-width: 1200px; /* Latime maxima a continutului */
+    margin: 0 auto; /* Centreaza continutul */
+    padding: 1rem; /* Spatiu interior */
+    background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
+    border-radius: 8px; /* Colturile sunt rotunjite */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Adauga o umbra subtila */
+}
+
+/* Titluri din sectiuni */
+section h2 {
+    color:black; /* Culoare albastra pentru titluri */
+}
+
+/* Stil pentru text si liste in sectiuni */
+section p, section ul {
+    font-size: 1.1rem; /* Text mai mare pentru sectiuni */
+    line-height: 1.6; /* Lizibilitate sporita */
+}
+
+/* Footer */
+footer {
+    text-align: center; /* Centreaza textul */
+    padding: 1rem 0; /* Spatiu interior */
+    margin-top: 2rem; /* Spatiu deasupra footer-ului */
+    font-size: 0.9rem; /* Dimensiune text mai mica */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Adauga o umbra discreta */
+}
+
+/* Imagini */
+img {
+    max-width: 90%; /* Dimensiunea maxima este 90% din container */
+    height: auto; /* Pastreaza proportiile */
+    display: block; /* Afisare pe un rand separat */
+    margin: 1rem auto; /* Centreaza imaginea */
+    border-radius: 8px; /* Colturile rotunjite */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbra discreta */
+    transition: transform 0.3s ease; /* Animatie la transformare */
+}
+
+/* Efect la hover pe imagini */
+img:hover {
+    transform: scale(1.35); /* Mareste imaginea */
+}
+
+/* Legaturi sociale */
+.social-links {
+    display: flex; /* Afisare flexibila */
+    justify-content: center; /* Centreaza continutul */
+    gap: 20px; /* Spatiu intre elemente */
+    padding: 20px; /* Spatiu interior */
+}
+
+/* Stil pentru iconite sociale */
+.social-icon {
+    font-size: 40px; /* Dimensiune mare pentru iconite */
+    color: #333; /* Culoare inchisa implicita */
+    transition: transform 0.3s ease, color 0.3s ease; /* Animatii */
+}
+
+/* Efect de hover pe iconite sociale */
+.social-icon:hover {
+    transform: scale(1.2); /* Mareste iconita */
+    color: #3dd5f0; /* Schimba culoarea la albastru */
+}
+
+.logo {
+    width: 100px; /* Ajusteaza dimensiunea logo-ului */
+    height: auto; /* Păstreaza proportiile */
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px; /* Spatiu intre logo si text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); /* Adauga o umbra discreta */
+}
+
+
+/* Formular */
+form {
+    max-width: 600px; /* Latime maxima a formularului */
+    margin: 2rem auto; /* Centreaza formularul si adauga spatiu deasupra/dedesubt */
+    padding: 1.5rem; /* Spatiu interior */
+    border: 1px solid   ; /* Bordura subtire, gri deschis */
+    border-radius: 8px; /* Colturile rotunjite */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Adauga o umbra discreta */
+}
+
+/* Etichete in formular */
+form label {
+    display: block; /* Fiecare eticheta pe un rand separat */
+    margin-bottom: 0.5rem; /* Spatiu intre eticheta si camp */
+    font-weight: bold; /* Text ingrosat pentru etichete */
+}
+
+/* Campuri de intrare si text in formular */
+form input, form textarea {
+    width: 100%; /* Latime completa */
+    padding: 0.5rem; /* Spatiu interior */
+    margin-bottom: 1rem; /* Spatiu intre campuri */
+    border: 1px solid #ccc; /* Bordura subtire, gri */
+    border-radius: 5px; /* Colturile usor rotunjite */
+    font-size: 1rem; /* Dimensiune text */
+}
+
+/* Buton de trimitere in formular */
+form input[type="submit"] {
+    background-color: #0056b3; /* Fundal albastru */
+    color: white; /* Text alb */
+    border: none; /* Fara bordura */
+    cursor: pointer; /* Cursor pointer */
+    font-weight: bold; /* Text ingrosat */
+    padding: 0.7rem 1.5rem; /* Spatiu interior */
+    transition: background-color 0.3s ease; /* Animatie pentru schimbarea culorii */
+}
+
+/* Efect la hover pentru butonul de trimitere */
+form input[type="submit"]:hover {
+    background-color: #ff5722; /* Fundal portocaliu */
+}
+
+/* Sectiune de adresa */
+address {
+    font-style: normal; /* Text normal (nu italic) */
+    color: #333; /* Culoare text inchisa */
+    background-color: #f9f9f9; /* Fundal deschis */
+    padding: 1rem; /* Spatiu interior */
+    border-left: 4px solid #0056b3; /* Bordura pe partea stanga, albastra */
+    margin: 1.5rem 0; /* Spatiu deasupra si dedesubt */
+    border-radius: 5px; /* Colturile rotunjite */
+    font-size: 0.95rem; /* Dimensiune text usor mai mica */
+    line-height: 1.5; /* Lizibilitate sporita */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Umbra discreta */
+}
+
+/* Butoane generale */
+button {
+    background-color: #0056b3; /* Fundal albastru */
+    color: white; /* Text alb */
+    font-size: 1rem; /* Dimensiune text */
+    padding: 0.8rem 1.5rem; /* Spatiu interior */
+    border: none; /* Fara bordura */
+    border-radius: 5px; /* Colturile rotunjite */
+    cursor: pointer; /* Cursor pointer */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animatii */
+    font-weight: bold; /* Text ingrosat */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Umbra discreta */
+}
+
+/* Efecte de hover pe butoane */
+button:hover {
+    background-color: red; /* Fundal albastru mai inchis */
+    transform: scale(1.05); /* Mareste butonul */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Umbra mai evidenta */
+}
+
+/* Efecte pentru butoanele apasate */
+button:active {
+    background-color: #003366; /* Fundal si mai inchis */
+    transform: scale(0.95); /* Micsoreaza butonul usor */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Umbra discreta */
+}
+
+/* Butoane dezactivate */
+button:disabled {
+    background-color: #cccccc; /* Fundal gri deschis */
+    color: #666666; /* Text gri inchis */
+    cursor: not-allowed; /* Cursor implicit */
+    box-shadow: none; /* Fara umbra */
+}
+
+.center-container {
+    display: flex; /* Activeaza Flexbox */
+    flex-direction: row; /* Aranjeaza elementele pe orizontala */
+    justify-content: center; /* Centreaza pe orizontala */
+    align-items: center; /* Centreaza pe verticala */
+}
+
+/* Sectiune informativa */
+.info-container {
+    position: relative; /* Pozitionare relativa pentru continut */
+    display: inline-block; /* Elemente afisate pe acelasi rand */
+    margin: 10px;
+}
+
+/* Casuta de selectie ascunsa */
+.info-checkbox {
+    display: none; /* Ascunde checkbox-ul */
+}
+
+/* Buton pentru afisarea informatiilor */
+.info-button {
+    padding: 10px 20px; /* Spatiu interior */
+    font-size: 1rem; /* Dimensiune text */
+    color: #fff; /* Text alb */
+    background-color:#0056b3; /* Fundal albastru */
+    border: none; /* Fara bordura */
+    border-radius: 5px; /* Colturile rotunjite */
+    cursor: pointer; /* Cursor pointer */
+    transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s; /* Animatii */
+    position: relative; /* Pozitionare relativa */
+}
+
+/* Efect la hover pe butonul informativ */
+.info-button:hover {
+    transform: translateY(-5px); /* Misca butonul in sus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adauga o umbra */
+    background-color: #0056b3; /* Fundal albastru mai inchis */
+}
+
+/* Afisare informatii suplimentare cand checkbox-ul este bifat */
+.info-checkbox:checked + .info-button::after {
+    content: attr(data-info); /* Afiseaza continutul din atributul data-info */
+    position: absolute; /* Pozitionare absoluta fata de parinte */
+    top: 120%; /* Pozitionare sub buton */
+    left: 50%; /* Centreaza pe orizontala */
+    transform: translateX(-50%); /* Ajusteaza pozitia la centru */
+    background-color: #e9ecef; /* Fundal deschis */
+    color: #333; /* Text inchis */
+    padding: 5px 10px; /* Spatiu interior */
+    border-radius: 5px; /* Colturile rotunjite */
+    border: 1px solid #ddd; /* Bordura subtire, gri */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Umbra discreta */
+    font-size: 0.9rem; /* Dimensiune text mai mica */
+    white-space: nowrap; /* Pastreaza textul pe un rand */
+    opacity: 1; /* Asigura vizibilitatea */
+    animation: fadeIn 0.3s ease; /* Animatie de aparitie */
+}
+
+/* Animatie pentru afisarea elementului */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Porneste de la invizibil */
+    }
+    to {
+        opacity: 1; /* Devine complet vizibil */
+    }
+}
+
+
+/* Sectiuni speciale: chimie si fitness */
+.chemistry-section, .fitness-section {
+    margin: 2rem auto; /* Spatiu exterior, sectiunile sunt centrate */
+    text-align: center; /* Aliniaza continutul la centru */
+    max-width: 800px; /* Latime maxima */
+    padding: 1rem; /* Spatiu interior */
+    cursor: pointer; /* Cursor pointer pentru interactiune */
+}
+
+/* Elemente <details> */
+details {
+    margin-top: 10px; /* Spatiu exterior deasupra */
+    background-color: transparent; /* Fundal deschis */
+    padding: 10px; /* Spatiu interior */
+    border-radius: 5px; /* Colturile rotunjite */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Adauga o umbra discreta */
+}
+
+/* Rezumatul din interiorul <details> */
+details summary {
+    font-weight: bold; /* Text ingrosat */
+    cursor: pointer; /* Cursor pointer pentru interactiune */
+}
+
+/* Rezumatul cand <details> este deschis */
+details[open] summary {
+    color: blue; /* Text albastru */
+}
+
+/* Meniu specific pentru <details> */
+.menu details {
+    background-color: transparent; /* Fundal albastru */
+    color: blue; /* Text alb */
+    padding: 10px; /* Spatiu interior */
+    margin: 10px; /* Spatiu exterior */
+    cursor: pointer; /* Cursor pointer */
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Animatie pentru toate proprietatile */
+    text-align: center; /* Text centrat */
+}
+
+/* Rezumatul din meniul <details> */
+.menu details summary {
+    font-weight: bold; /* Text ingrosat */
+    font-size: 1.2rem; /* Dimensiune mai mare */
+}
+
+/* Rezumatul cand meniul este deschis */
+.menu details[open] summary {
+    color: rgb(1, 1, 211); /* Text albastru mai inchis */
+}
+
+/* Imagini in sectiunile chimie si fitness */
+.chemistry-img, .fitness-img {
+    max-width: 100%; /* Latime maxima egala cu parintele */
+    height: auto; /* Pastreaza proportiile imaginii */
+    margin: 1rem 0; /* Spatiu exterior vertical */
+    border-radius: 8px; /* Colturile rotunjite */
+    display: block; /* Afiseaza ca bloc */
+    margin-left: auto; /* Centreaza imaginea pe orizontala */
+    margin-right: auto; /* Centreaza imaginea pe orizontala */
+}
+
+/* Stilizare pentru titluri */
+.title {
+    font-size: 2rem; /* Dimensiune mare */
+    letter-spacing: 2px; /* Spatiu intre litere */
+}
+
+/* Sectiune galerie */
+.gallery-section {
+    padding: 2rem 1rem; /* Spatiu interior */
+    background-color: transparent; /* Fundal alb */
+    margin: 2rem 0; /* Spatiu exterior vertical */
+    border-radius: 8px; /* Colturile rotunjite */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbra discreta */
+}
+
+/* Titlu in sectiunea galerie */
+.gallery-section h2 {
+    text-align: center; /* Text centrat */
+    font-size: 2rem; /* Dimensiune mare */
+    color: black; /* Text negru */
+    margin-bottom: 1.5rem; /* Spatiu sub titlu */
+    font-weight: bold; /* Text ingrosat */
+}
+
+/* Structura grila pentru galerie */
+.gallery {
+    display: grid; /* Afiseaza elementele ca grila */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Coloane flexibile */
+    gap: 1rem; /* Spatiu intre elemente */
+    max-width: 1200px; /* Latime maxima */
+    margin: 0 auto; /* Centreaza grila */
+}
+
+/* Elemente individuale in galerie */
+.gallery-item {
+    background-color: transparent; /* Fundal alb */
+    overflow: hidden; /* Ascunde continutul care depaseste limitele */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animatii la hover */
+}
+
+/* Imagini din galerie */
+.gallery-item img {
+    width: 100%; /* Latime completa */
+    height: auto; /* Pastreaza proportiile */
+    display: block; /* Afiseaza ca bloc */
+}
+
+/* Efect la hover pe elementele galeriei */
+.gallery-item:hover {
+    transform: scale(1.05); /* Mareste elementul */
+}
+
+/* Media queries pentru ecrane mai mici */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem; /* Dimensiune mai mica pentru titluri */
+        text-align: center; /* Titlurile sunt centrate */
+    }
+
+    nav {
+        gap: 10px; /* Spatiu mai mic intre butoane */
+    }
+
+    nav button {
+        font-size: 0.9rem; /* Dimensiune text mai mica pentru butoane */
+        padding: 8px 12px; /* Spatiu interior redus */
+    }
+
+    address {
+        padding: 10px; /* Spatiu interior mai mic */
+        font-size: 0.9rem; /* Dimensiune text redusa */
+    }
+
+    .info-button {
+        width: 100%; /* Butoanele ocupa toata latimea */
+        text-align: center; /* Text centrat */
+        font-size: 1.2rem; /* Dimensiune mai mare pentru text */
+    }
+
+    .gallery-section {
+        padding: 1rem; /* Spatiu interior redus */
+    }
+
+    .gallery-item {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Umbra mai discreta */
+    }
+
+    .gallery-item:hover {
+        transform: none; /* Fara efect de marire */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Umbra moderata */
+    }
+}
+
+/* Media queries pentru ecrane foarte mici */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column; /* Afiseaza butoanele pe coloana */
+        align-items: center; /* Centreaza butoanele */
+    }
+
+    nav button {
+        width: 50%; /* Butoanele ocupa toata latimea */
+        max-width: 300px; /* Latime maxima pentru butoane */
+    }
+
+    address {
+        font-size: 0.8rem; /* Dimensiune text mai mica */
+    }
+}
