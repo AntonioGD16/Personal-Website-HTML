@@ -4,62 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <h1 align = "center">Curriculum Vitae - Dragne Antonio Gabriel</h1>
-    <hr/>
-    <p style = "font-size: 30px; text-align: center">Meniu</p>
-    <nav align = "center">
-            <p>
-                <a href = "home.html">
-                    <font size = "5">Home</font>
-                </a>
-                <br/>
-        
-                <a href = "cv.html">
-                    <font size = "5">CV</font>
-                </a>
-                <br/>
-            
-                <a href = "contact.html">
-                    <font size = "5">Contact</font>
-                </a>
-            </p>
+    <main>
+    <header>
+        <a href = "home.html">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            </a>
+        <h1>Curriculum Vitae</h1>
+    </header>
+    <nav>
+        <div class = "menu">
+            <details>
+            <summary>Meniu</summary>
+        <button onclick="window.location.href='home.html'">Home</button>
+        <button onclick="window.location.href='cv.html'">CV</button>
+        <button onclick="window.location.href='contact.html'">Contact</button>
+        <button onclick="window.location.href='galerie.html'">Portofoliu</button>
+    </details>
+    </div>
     </nav>
-    <hr/>
+        <section>
+        <h2>Educatie si Formare</h2>
+        <details>
+            <summary>Universitatea Nationala de Stiinta si Tehnologie Politehnica Bucuresti</summary>
+            <p><b>Student</b> - Facultatea de Automatica si Calculatoare</p>
+            <p>Perioada: 2023 - prezent</p>
+            <p>Descriere: Urmez cursurile Facultății de Automatică și Calculatoare.</p>
+        </details>
+        <details>
+            <summary>Colegiul National "Unirea"</summary>
+            <p><b>Elev</b> - Turnu Măgurele</p>
+            <p>Perioada: 2015 - 2023</p>
+            <p>Descriere: Am fost elev în gimnaziu și liceu la Colegiul Național "Unirea".</p>
+        </details>
+    </section>
 
-    <h2>Educatie si Formare</h2>
-    <p><b>Student</b> - Universitatea Nationala de Stiinta si Tehnologie Politehnica Bucuresti</p>
-    <p>Perioada: 2023 - prezent</p>
-    <p>Descriere: Din 2023 si pana in prezent urmez cursurile Facultatii de Automatica si Calculatoare</p>
-    <p><b>Elev</b> - Colegiul National <i>"Unirea"</i> din Turnu Magurele, judetul Teleorman</p>
-    <p>Perioada: 2015 - 2023</p>
-    <p>Descriere: La Colegiul National <i>"Unirea"</i> am fost elev atat in gimnaziu, cat si in liceu</p>
+    <section>
+        <h2>Competente Personale</h2>
+        <p><b>Limbi straine:</b> Romana (Limba materna), Engleza (Avansat)</p>
+        <p><b>Competente digitale:</b> Word, Excel, PowerPoint, MATLAB, C/C++</p>
+    </section>
 
-    <h2>Competente Personale</h2>
-    <p><strong>Limbi straine:</strong> Romana (Limba materna), Engleza (Avansat)</p>
-    <p><strong>Competente digitale:</strong> Word, Excel, PowerPoint, MATLAB, C/C++</p>
+    <section>
+        <h2>Alte Informatii</h2>
+        <details>
+            <summary>Premii si Participari la Olimpiade</summary>
+            <ul>
+                <li>Premiul 2 la Olimpiada de Fizica, faza județeană, clasa a 10-a</li>
+                <li>Scor perfect la concursul de fizică "Liviu Tatar", clasa a 10-a</li>
+                <li>Participare la Olimpiada de Matematica, faza județeană, clasa a 10-a</li>
+                <li>Premiul 2 la Olimpiada de Fizica, faza județeană, clasa a 11-a</li>
+                <li>Participare la Olimpiada de Matematica, faza județeană, clasa a 11-a</li>
+            </ul>
+        </details>
 
-    <h2>Alte Informatii</h2>
-        <ul><strong>Premii si participari la olimpiade</strong>
-            <li>Premiul 2 la Olimpiada de Fizica faza judeteana in clasa a 10-a</li>
-            <li>Scor perfect la toate cele 3 faze ale concursului de fizica <i>"Liviu Tatar"</i> in clasa a 10-a</li>
-            <li>Participare la Olimpiada de Matematica faza judeteana in clasa a 10-a</li>
-            <li>Premiul 2 la Olimpiada de Fizica faza judeteana in clasa a 11-a</li>
-            <li>Participare la Olimpiada de Matematica faza judeteana in clasa a 11-a</li>
-        </ul>
+        <details>
+            <summary>Proiecte personale</summary>
+            <ul>
+                <li>Simulator de turneu de tip Lan Party, scris în C</li>
+                <li>Implementarea unui algoritm de clasificare similar cu metoda PageRank, în C</li>
+            </ul>
+        </details>
+        </section>
 
-        <ul><strong>Proiecte personale</strong>
-            <li>Simulator de turneu de tip Lan Party scris in C</li>
-            <li>Am implementat o metoda de calcul a unui clasament asemanatoare cu metoda PageRank creata de Google pentru a clasa site-uri web in C</li>
-        </ul>
-
-    <h2>Linku-uri utile</h2>
-    <a href="https://github.com/AntonioGD16">Github</a>
-    <a href="https://www.linkedin.com/in/antonio-gabriel-dragne">LinkedIn</a>
-    <a href="https://www.instagram.com/antonio_dragne/">Instagram</a>
-    <a href = "https://www.facebook.com/antonio.dragne.9">Faceboook</a> <br/>
-    <a href="cv.html" download = "cv.html">Descarca CV</a>
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/AntonioGD16" class="social-icon" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/antonio-gabriel-dragne" class="social-icon" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/antonio_dragne/" class="social-icon" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/antonio.dragne.9" class="social-icon" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Dragne Antonio Gabriel</p>
+    </footer>
+    </main>
 
 
 </body>
